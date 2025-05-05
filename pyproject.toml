@@ -1,17 +1,24 @@
 [project]
-name = "langchain"
+name = "my-langchain-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "dotenv>=0.9.9",
+    "langchain-community>=0.3.23",
+    "langchain-google-vertexai>=2.0.21",
+    "langchain-milvus>=0.1.10",
     "langchain-openai>=0.3.16",
+    "langchain-pinecone>=0.2.5",
+    "langchain-qdrant>=0.2.0",
+    "pinecone[async]==6.0.2",
+    "pypdf>=5.4.0",
+    "qdrant-client>=1.14.2",
 ]
 
 [dependency-groups]
 dev = [
-    "langchain",
 ]
 
 [tool.uv.sources]
